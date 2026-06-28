@@ -1,52 +1,42 @@
 import { Movie } from "@/lib/movies";
 
 export default function MovieCard({ movie }: { movie: Movie }) {
-  const stars = "★".repeat(Math.floor(movie.rating)) + "☆".repeat(5 - Math.floor(movie.rating));
+  const rating = movie.rating.toFixed(1);
 
   return (
-    <div style={{
-      background: "#fff",
-      border: "1px solid #f0d0e8",
-      borderRadius: 12,
-      overflow: "hidden",
-      boxShadow: "0 2px 12px rgba(214,51,132,0.07)",
-    }}>
-      <div style={{ background: "#fdf0f6", height: 180, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+    <div style={{ background: "#fff" }}>
+      <div style={{ background: "#f5f0ee", height: 220, display: "flex", alignItems: "center", justifyContent: "center", position: "relative", marginBottom: 16 }}>
         {movie.rank && (
           <div style={{
-            position: "absolute", top: 8, left: 8,
-            background: "#d63384", color: "white",
-            fontWeight: "bold", fontSize: 13, padding: "2px 10px", borderRadius: 20
+            position: "absolute", top: 12, left: 12,
+            color: "#b5838d", fontFamily: "Georgia, serif",
+            fontSize: 12, letterSpacing: "0.1em"
           }}>
-            #{movie.rank}
+            0{movie.rank}
           </div>
         )}
-        <span style={{ color: "#e0a0c0", fontSize: 14 }}>サムネイル</span>
+        <span style={{ color: "#ccc", fontSize: 13 }}>image</span>
       </div>
-      <div style={{ padding: 16 }}>
-        <div style={{ display: "flex", gap: 6, marginBottom: 8, flexWrap: "wrap" }}>
-          {movie.genre.map((g, i) => (
-            <span key={i} style={{ background: "#fff0f6", color: "#d63384", fontSize: 11, padding: "2px 8px", borderRadius: 20, fontWeight: "bold" }}>{g}</span>
-          ))}
-        </div>
-        <h3 style={{ fontSize: 15, fontWeight: "bold", marginBottom: 6, lineHeight: 1.4, color: "#2a2a2a" }}>{movie.title}</h3>
-        <p style={{ color: "#aaa", fontSize: 12, marginBottom: 6 }}>{movie.author}</p>
-        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-          <span style={{ color: "#f5a623", fontSize: 14 }}>{stars}</span>
-          <span style={{ color: "#aaa", fontSize: 12 }}>{movie.rating} ({movie.reviewCount}件)</span>
-        </div>
-        <p style={{ color: "#666", fontSize: 13, marginBottom: 14, lineHeight: 1.7 }}>{movie.description}</p>
+      <div style={{ display: "flex", gap: 6, marginBottom: 8, flexWrap: "wrap" }}>
+        {movie.genre.map((g, i) => (
+          <span key={i} style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.08em" }}>{g}</span>
+        ))}
+      </div>
+      <h3 style={{ fontSize: 14, fontWeight: "400", marginBottom: 6, lineHeight: 1.6, color: "#1c1c1c", letterSpacing: "0.05em" }}>{movie.title}</h3>
+      <p style={{ color: "#aaa", fontSize: 12, marginBottom: 8, letterSpacing: "0.05em" }}>{movie.author}</p>
+      <p style={{ color: "#777", fontSize: 12, marginBottom: 16, lineHeight: 1.8 }}>{movie.description}</p>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <span style={{ color: "#b5838d", fontSize: 12 }}>★ {rating}</span>
         <a
           href={movie.affiliateUrl}
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            display: "block", background: "#d63384", color: "white",
-            textAlign: "center", padding: "10px 0", borderRadius: 8,
-            fontWeight: "bold", fontSize: 14, textDecoration: "none"
+            color: "#1c1c1c", fontSize: 11, letterSpacing: "0.12em",
+            textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 2
           }}
         >
-          FANZAで見る →
+          view more →
         </a>
       </div>
     </div>

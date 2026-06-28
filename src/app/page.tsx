@@ -1,56 +1,43 @@
 import Link from "next/link";
 import MovieCard from "@/components/MovieCard";
 import { movies } from "@/lib/movies";
+import { posts } from "@/lib/posts";
 
 export default function Home() {
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 16px" }}>
+    <div>
 
       {/* ヒーロー */}
-      <section style={{
-        padding: "56px 0 40px", textAlign: "center",
-        background: "linear-gradient(135deg, #fff0f6 0%, #f3e8ff 100%)",
-        margin: "0 -16px", padding: "56px 16px 40px"
-      }}>
-        <p style={{ color: "#d63384", fontWeight: "bold", fontSize: 13, marginBottom: 8, letterSpacing: 2 }}>✨ 女性のための FANZAガイド</p>
-        <h1 style={{ fontSize: 30, fontWeight: "bold", marginBottom: 12, lineHeight: 1.5, color: "#2a2a2a" }}>
-          BL・乙女・女性向け同人を<br />もっと楽しもう
+      <section style={{ background: "#f5f0ee", padding: "96px 24px", textAlign: "center" }}>
+        <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 20 }}>FANZA for women</p>
+        <h1 style={{ fontSize: 28, fontWeight: "400", lineHeight: 1.9, color: "#1c1c1c", letterSpacing: "0.1em", marginBottom: 24, fontFamily: "Georgia, serif" }}>
+          BL・乙女・女性向け同人を<br />もっと、自分らしく。
         </h1>
-        <p style={{ color: "#888", fontSize: 15, marginBottom: 28 }}>
-          口コミ・ランキング・お得情報を女性目線でお届け
+        <p style={{ color: "#888", fontSize: 13, marginBottom: 40, lineHeight: 2, letterSpacing: "0.08em" }}>
+          女性目線で選んだランキング・口コミ・お得情報をお届けします
         </p>
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/ranking" style={{
-            background: "#d63384", color: "white", padding: "13px 28px",
-            borderRadius: 30, fontWeight: "bold", fontSize: 15, textDecoration: "none"
-          }}>
-            ランキングを見る
-          </Link>
-          <Link href="/blog" style={{
-            background: "#fff", color: "#d63384", padding: "13px 28px",
-            borderRadius: 30, fontWeight: "bold", fontSize: 15, textDecoration: "none",
-            border: "2px solid #d63384"
-          }}>
-            ブログを読む
-          </Link>
-        </div>
+        <Link href="/ranking" style={{
+          color: "#1c1c1c", fontSize: 12, letterSpacing: "0.2em",
+          textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 4
+        }}>
+          ranking を見る
+        </Link>
       </section>
 
-      <div style={{ padding: "32px 0" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px" }}>
 
         {/* 注意書き */}
-        <div style={{ background: "#fff8f0", border: "1px solid #ffd0a0", borderRadius: 8, padding: "10px 16px", marginBottom: 32, fontSize: 13, color: "#c06000" }}>
-          ⚠️ 本サイトは18歳以上の方を対象としています。18歳未満の方はご利用をお控えください。
-        </div>
+        <p style={{ color: "#bbb", fontSize: 11, textAlign: "center", padding: "24px 0", letterSpacing: "0.05em", borderBottom: "1px solid #ebebeb" }}>
+          ※ 本サイトは18歳以上の方を対象としています
+        </p>
 
-        {/* ジャンルバッジ */}
-        <section style={{ marginBottom: 40 }}>
-          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+        {/* ジャンル */}
+        <section style={{ padding: "64px 0 48px" }}>
+          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
             {["BL動画", "乙女ゲーム", "女性向け同人", "TL漫画", "腐女子向け", "イケボ朗読"].map((g, i) => (
               <span key={i} style={{
-                background: i % 2 === 0 ? "#fff0f6" : "#f3e8ff",
-                color: i % 2 === 0 ? "#d63384" : "#7c3aed",
-                padding: "8px 18px", borderRadius: 30, fontSize: 14, fontWeight: "bold", cursor: "pointer"
+                color: "#888", fontSize: 12, letterSpacing: "0.1em",
+                padding: "8px 20px", border: "1px solid #ddd", borderRadius: 0, cursor: "pointer"
               }}>
                 {g}
               </span>
@@ -58,44 +45,51 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 人気ランキング */}
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: 20, fontWeight: "bold", marginBottom: 20, paddingBottom: 8, borderBottom: "2px solid #d63384", color: "#2a2a2a" }}>
-            💕 今週の人気ランキング TOP3
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20 }}>
+        {/* ランキング */}
+        <section style={{ paddingBottom: 80 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 8 }}>RANKING</p>
+            <h2 style={{ fontSize: 20, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>今週の人気作品</h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 40 }}>
             {movies.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />
             ))}
           </div>
-          <div style={{ textAlign: "center", marginTop: 24 }}>
+          <div style={{ textAlign: "center", marginTop: 48 }}>
             <Link href="/ranking" style={{
-              border: "2px solid #d63384", color: "#d63384", padding: "10px 32px",
-              borderRadius: 30, fontWeight: "bold", textDecoration: "none", fontSize: 15
+              color: "#1c1c1c", fontSize: 11, letterSpacing: "0.2em",
+              textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 4
             }}>
-              もっと見る
+              view more
             </Link>
           </div>
         </section>
 
-        {/* 特徴 */}
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: 20, fontWeight: "bold", marginBottom: 20, paddingBottom: 8, borderBottom: "2px solid #d63384", color: "#2a2a2a" }}>
-            FANZAが女性に選ばれる理由
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16 }}>
-            {[
-              { icon: "📚", title: "BL作品が充実", desc: "国内最大級のBL・女性向け同人コンテンツが揃っています。" },
-              { icon: "🔒", title: "匿名・安心", desc: "購入履歴は完全非公開。安心してお楽しみいただけます。" },
-              { icon: "📱", title: "スマホで読める", desc: "いつでもどこでも、スマホから快適に楽しめます。" },
-              { icon: "💰", title: "セール・クーポン", desc: "定期的なセールやクーポンでお得に購入できます。" },
-            ].map((item, i) => (
-              <div key={i} style={{ background: i % 2 === 0 ? "#fff0f6" : "#f3e8ff", borderRadius: 12, padding: 20 }}>
-                <div style={{ fontSize: 28, marginBottom: 8 }}>{item.icon}</div>
-                <h3 style={{ fontWeight: "bold", marginBottom: 6, color: "#2a2a2a" }}>{item.title}</h3>
-                <p style={{ color: "#666", fontSize: 14, lineHeight: 1.7 }}>{item.desc}</p>
-              </div>
+        {/* ジャーナル（ブログ） */}
+        <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 80, paddingBottom: 80 }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 8 }}>OUR JOURNAL</p>
+            <h2 style={{ fontSize: 20, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>読みものと、おすすめ</h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 40 }}>
+            {posts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                <div style={{ background: "#f9f6f4", height: 180, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                  <span style={{ color: "#ccc", fontSize: 13 }}>image</span>
+                </div>
+                <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.1em", marginBottom: 6 }}>{post.category}</p>
+                <h3 style={{ fontSize: 14, fontWeight: "400", color: "#1c1c1c", lineHeight: 1.7, letterSpacing: "0.05em" }}>{post.title}</h3>
+              </Link>
             ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 48 }}>
+            <Link href="/blog" style={{
+              color: "#1c1c1c", fontSize: 11, letterSpacing: "0.2em",
+              textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 4
+            }}>
+              view more
+            </Link>
           </div>
         </section>
 
