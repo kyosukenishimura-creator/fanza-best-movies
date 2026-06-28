@@ -1,8 +1,10 @@
 import Link from "next/link";
 import MovieCard from "@/components/MovieCard";
 import ScrollReveal from "@/components/ScrollReveal";
+import HorizontalRanking from "@/components/HorizontalRanking";
 import { movies } from "@/lib/movies";
 import { posts } from "@/lib/posts";
+import { mangaRanking } from "@/lib/ranking";
 
 export default function Home() {
   return (
@@ -106,6 +108,19 @@ export default function Home() {
                 view more
               </Link>
             </div>
+          </ScrollReveal>
+        </section>
+
+        {/* 書影ランキング */}
+        <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 64, paddingBottom: 64 }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center", marginBottom: 40 }}>
+              <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 8 }}>RANKING</p>
+              <h2 style={{ fontSize: 20, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>評価ランキング（10日間）</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <HorizontalRanking title="漫画（コミック）" works={mangaRanking} />
           </ScrollReveal>
         </section>
 
