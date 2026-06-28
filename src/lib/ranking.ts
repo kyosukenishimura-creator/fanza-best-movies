@@ -6,6 +6,25 @@ export type RankingWork = {
   linkUrl: string;
 };
 
+export const novelRanking: RankingWork[] = [
+  { rank: 1, title: "麗しのオメガと卑しいアルファ", author: "羽生橋はせを", imageUrl: "https://img.chil-chil.net/goods_img/L/00140961_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=麗しのオメガ/" },
+  { rank: 2, title: "共鳴熱情 オメガバース 上", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00123428_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=共鳴熱情/" },
+  { rank: 3, title: "オメガは運命に誓わない", author: "安西リカ", imageUrl: "https://img.chil-chil.net/goods_img/L/00103055_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=オメガは運命に/" },
+  { rank: 4, title: "共鳴劣情 オメガバース", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00108345_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=共鳴劣情/" },
+  { rank: 5, title: "共鳴発情 オメガバース", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00097508_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=共鳴発情/" },
+  { rank: 6, title: "オメガバースの不完全性定理", author: "義月粧子", imageUrl: "https://img.chil-chil.net/goods_img/L/00095319_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=オメガバースの不完全性/" },
+  { rank: 7, title: "イグナートの花嫁", author: "シュークリーム", imageUrl: "https://img.chil-chil.net/goods_img/L/00135964_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=イグナートの花嫁/" },
+  { rank: 8, title: "小説 オメガバースアンソロジー", author: "リブレ", imageUrl: "https://img.chil-chil.net/goods_img/L/00090050_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=オメガバースアンソロジー/" },
+];
+
+export const blcdRanking: RankingWork[] = [
+  { rank: 1, title: "メルティホワイトアウト", author: "鯛野ニッケ", imageUrl: "https://img.chil-chil.net/goods_img/L/00140603_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=メルティホワイトアウト/" },
+  { rank: 2, title: "君、シヲレルコト勿レ", author: "Charme Gatto", imageUrl: "https://img.chil-chil.net/goods_img/L/00134588_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=君シヲレルコト/" },
+  { rank: 3, title: "シュガードラッグ 薬学side", author: "頼長", imageUrl: "https://img.chil-chil.net/goods_img/L/00136571_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=シュガードラッグ/" },
+  { rank: 4, title: "セブンティーンシロップス", author: "あらた六花", imageUrl: "https://img.chil-chil.net/goods_img/L/00138086_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=セブンティーンシロップス/" },
+  { rank: 5, title: "ノーカラーベイビー", author: "新書館", imageUrl: "https://img.chil-chil.net/goods_img/L/00098892_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=ノーカラーベイビー/" },
+];
+
 export const mangaRanking: RankingWork[] = [
   { rank: 1, title: "雨が止んだら、晴れ時々…恋", author: "サクタ", imageUrl: "https://img.chil-chil.net/goods_img/L/00162925_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=雨が止んだら/" },
   { rank: 2, title: "茂木くんはどうしてもしてみたい", author: "淵", imageUrl: "https://img.chil-chil.net/goods_img/L/00162924_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=茂木くん/" },

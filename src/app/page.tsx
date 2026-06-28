@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import HorizontalRanking from "@/components/HorizontalRanking";
 import { movies } from "@/lib/movies";
 import { posts } from "@/lib/posts";
-import { mangaRanking } from "@/lib/ranking";
+import { mangaRanking, novelRanking, blcdRanking } from "@/lib/ranking";
 
 export default function Home() {
   return (
@@ -121,6 +121,12 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal>
             <HorizontalRanking title="漫画（コミック）" works={mangaRanking} />
+          </ScrollReveal>
+          <ScrollReveal>
+            <HorizontalRanking title="小説" works={novelRanking} />
+          </ScrollReveal>
+          <ScrollReveal>
+            <HorizontalRanking title="BLCD" works={blcdRanking} />
           </ScrollReveal>
         </section>
 
