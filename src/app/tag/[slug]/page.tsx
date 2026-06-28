@@ -2,6 +2,7 @@ import { tags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export function generateStaticParams() {
   return tags.map((t) => ({ slug: t.slug }));
@@ -21,9 +22,7 @@ export default async function TagDetailPage({ params }: { params: Promise<{ slug
 
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: "48px 24px" }}>
-      <Link href="/tag" style={{ color: "#b5838d", textDecoration: "none", fontSize: 12, letterSpacing: "0.1em", display: "inline-block", marginBottom: 32 }}>
-        ← タグ一覧
-      </Link>
+      <Breadcrumb items={[{ label: "TOP", href: "/" }, { label: "タグ", href: "/tag" }, { label: tag.name }]} />
 
       <div style={{ textAlign: "center", marginBottom: 48 }}>
         <span style={{ fontSize: 40 }}>{tag.emoji}</span>

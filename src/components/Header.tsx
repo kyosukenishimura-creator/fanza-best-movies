@@ -14,6 +14,7 @@ export default function Header() {
             { label: "sale", href: "/sale" },
             { label: "guide", href: "/guide" },
             { label: "tag", href: "/tag" },
+            { label: "faq", href: "/faq" },
           ].map((item) => (
             <Link key={item.href} href={item.href} style={{ color: "#555", textDecoration: "none", fontSize: 12, letterSpacing: "0.12em" }}>
               {item.label}
