@@ -9,6 +9,7 @@ export default function Header() {
         </Link>
         <nav style={{ display: "flex", gap: 24 }}>
           <Link href="/ranking" style={{ color: "#333", textDecoration: "none", fontSize: 14, fontWeight: "500" }}>ランキング</Link>
+          <Link href="/blog" style={{ color: "#333", textDecoration: "none", fontSize: 14, fontWeight: "500" }}>ブログ</Link>
           <Link href="/review" style={{ color: "#333", textDecoration: "none", fontSize: 14, fontWeight: "500" }}>レビュー</Link>
           <Link href="/genre" style={{ color: "#333", textDecoration: "none", fontSize: 14, fontWeight: "500" }}>ジャンル</Link>
         </nav>
