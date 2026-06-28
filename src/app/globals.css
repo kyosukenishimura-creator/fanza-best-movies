@@ -2,12 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --accent: #e50914;
-  --accent-light: #fff0f0;
-  --card-bg: #f9f9f9;
-  --border: #e8e8e8;
-  --text-muted: #777;
+  --foreground: #2a2a2a;
+  --accent: #d63384;
+  --accent-light: #fff0f6;
+  --accent-secondary: #7c3aed;
+  --card-bg: #fafafa;
+  --border: #f0e6f0;
+  --text-muted: #888;
 }
 
 body {

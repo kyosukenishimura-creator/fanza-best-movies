@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FANZA動画ベスト | おすすめ人気作品ランキング",
-  description: "FANZAの人気動画をジャンル別にランキング形式でご紹介。口コミ・レビュー・無料試聴情報も掲載。",
+  title: "FANZA女性向けナビ | BL・乙女・同人おすすめランキング",
+  description: "FANZAの女性向けコンテンツをジャンル別にご紹介。BL・乙女ゲーム・女性向け同人の口コミ・ランキングを掲載。",
 };
 
 export default function RootLayout({

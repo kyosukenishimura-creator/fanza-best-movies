@@ -1,51 +1,47 @@
 export type Movie = {
   id: string;
   title: string;
-  actress: string;
+  author: string;
   genre: string[];
   rating: number;
   reviewCount: number;
   description: string;
   affiliateUrl: string;
-  thumbnailUrl: string;
   rank?: number;
 };
 
 export const movies: Movie[] = [
   {
     id: "1",
-    title: "【サンプル】人気作品タイトル1",
-    actress: "女優名A",
-    genre: ["ジャンル1", "ジャンル2"],
-    rating: 4.8,
-    reviewCount: 1240,
-    description: "FANZAで大人気の作品。圧倒的なクオリティで多くのファンを獲得。",
+    title: "【サンプル】人気BL作品タイトル1",
+    author: "サークル名A",
+    genre: ["BL", "ラブコメ"],
+    rating: 4.9,
+    reviewCount: 2100,
+    description: "胸キュン必至の王道BL。純愛ストーリーに感動の声続出。女性ファン絶賛の大人気作品。",
     affiliateUrl: "https://www.dmm.co.jp/",
-    thumbnailUrl: "/placeholder.jpg",
     rank: 1,
   },
   {
     id: "2",
-    title: "【サンプル】人気作品タイトル2",
-    actress: "女優名B",
-    genre: ["ジャンル1", "ジャンル3"],
+    title: "【サンプル】人気BL作品タイトル2",
+    author: "サークル名B",
+    genre: ["BL", "シリアス"],
     rating: 4.7,
-    reviewCount: 980,
-    description: "話題沸騰中の最新作。デビュー作ながら圧倒的な存在感を発揮。",
+    reviewCount: 1560,
+    description: "切なさと甘さが絶妙なバランス。何度も読み返したくなる名作。",
     affiliateUrl: "https://www.dmm.co.jp/",
-    thumbnailUrl: "/placeholder.jpg",
     rank: 2,
   },
   {
     id: "3",
-    title: "【サンプル】人気作品タイトル3",
-    actress: "女優名C",
-    genre: ["ジャンル2", "ジャンル4"],
+    title: "【サンプル】人気乙女ゲーム作品1",
+    author: "サークル名C",
+    genre: ["乙女", "ファンタジー"],
     rating: 4.6,
-    reviewCount: 856,
-    description: "長年のファンも唸らせる完成度の高い作品。",
+    reviewCount: 980,
+    description: "異世界×恋愛の乙女系作品。ヒロインへの感情移入がすごいと話題。",
     affiliateUrl: "https://www.dmm.co.jp/",
-    thumbnailUrl: "/placeholder.jpg",
     rank: 3,
   },
 ];
