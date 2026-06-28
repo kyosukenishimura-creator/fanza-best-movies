@@ -5,7 +5,7 @@ export default function Header() {
     <header style={{ background: "#fff", borderBottom: "1px solid #ebebeb" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         <Link href="/" style={{ textDecoration: "none" }}>
-          <span style={{ color: "#1c1c1c", fontWeight: "400", fontSize: 16, letterSpacing: "0.15em", fontFamily: "Georgia, serif" }}>FANZA for women</span>
+          <span style={{ color: "#1c1c1c", fontWeight: "400", fontSize: 16, letterSpacing: "0.15em", fontFamily: "Georgia, serif" }}>私だけの書斎</span>
         </Link>
         <nav style={{ display: "flex", gap: 32 }}>
           {[

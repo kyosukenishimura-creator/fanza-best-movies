@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* ヒーロー */}
       <section style={{ background: "#f5f0ee", padding: "96px 24px", textAlign: "center" }}>
-        <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 20 }}>FANZA for women</p>
+        <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 20 }}>私だけの書斎</p>
         <h1 style={{ fontSize: 28, fontWeight: "400", lineHeight: 1.9, color: "#1c1c1c", letterSpacing: "0.1em", marginBottom: 24, fontFamily: "Georgia, serif" }}>
           BL・乙女・女性向け同人を<br />もっと、自分らしく。
         </h1>

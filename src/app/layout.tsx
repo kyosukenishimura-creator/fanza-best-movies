@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FANZA女性向けナビ | BL・乙女・同人おすすめランキング",
-  description: "FANZAの女性向けコンテンツをジャンル別にご紹介。BL・乙女ゲーム・女性向け同人の口コミ・ランキングを掲載。",
+  title: "私だけの書斎 | BL・乙女・女性向け同人おすすめ",
+  description: "女性のための大人コンテンツガイド。BL・乙女ゲーム・女性向け同人の口コミ・ランキングを掲載。",
 };
 
 export default function RootLayout({
