@@ -4,14 +4,10 @@ export default function MovieCard({ movie }: { movie: Movie }) {
   const rating = movie.rating.toFixed(1);
 
   return (
-    <div style={{ background: "#fff" }}>
-      <div style={{ background: "#f5f0ee", height: 220, display: "flex", alignItems: "center", justifyContent: "center", position: "relative", marginBottom: 16 }}>
+    <div className="card-hover" style={{ background: "#fff" }}>
+      <div style={{ background: "#f5f0ee", height: 220, display: "flex", alignItems: "center", justifyContent: "center", position: "relative", marginBottom: 16, overflow: "hidden" }}>
         {movie.rank && (
-          <div style={{
-            position: "absolute", top: 12, left: 12,
-            color: "#b5838d", fontFamily: "Georgia, serif",
-            fontSize: 12, letterSpacing: "0.1em"
-          }}>
+          <div style={{ position: "absolute", top: 12, left: 12, color: "#b5838d", fontFamily: "Georgia, serif", fontSize: 12, letterSpacing: "0.1em" }}>
             0{movie.rank}
           </div>
         )}
@@ -27,15 +23,8 @@ export default function MovieCard({ movie }: { movie: Movie }) {
       <p style={{ color: "#777", fontSize: 12, marginBottom: 16, lineHeight: 1.8 }}>{movie.description}</p>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <span style={{ color: "#b5838d", fontSize: 12 }}>★ {rating}</span>
-        <a
-          href={movie.affiliateUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: "#1c1c1c", fontSize: 11, letterSpacing: "0.12em",
-            textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 2
-          }}
-        >
+        <a href={movie.affiliateUrl} target="_blank" rel="noopener noreferrer" className="link-hover"
+          style={{ color: "#1c1c1c", fontSize: 11, letterSpacing: "0.12em", textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 2 }}>
           view more →
         </a>
       </div>
