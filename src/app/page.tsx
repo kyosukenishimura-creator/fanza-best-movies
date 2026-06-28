@@ -77,6 +77,38 @@ export default function Home() {
           </ScrollReveal>
         </section>
 
+        {/* タグランキング */}
+        <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 80, paddingBottom: 80 }}>
+          <ScrollReveal>
+            <div style={{ textAlign: "center", marginBottom: 48 }}>
+              <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 8 }}>TAG RANKING</p>
+              <h2 style={{ fontSize: 20, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>タグで探す</h2>
+            </div>
+          </ScrollReveal>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 20 }}>
+            {[
+              { emoji: "🐺", name: "オメガバース", slug: "omegaverse", desc: "運命の番。本能と恋愛が絡み合う人気ジャンル。" },
+              { emoji: "🎓", name: "年の差", slug: "toshino-sa", desc: "大人×若者の禁断の恋。ドキドキが止まらない。" },
+              { emoji: "🐾", name: "獣人", slug: "kemono", desc: "ケモ耳・しっぽ・本能的な愛情表現が人気。" },
+            ].map((tag, i) => (
+              <ScrollReveal key={tag.slug} delay={i * 100}>
+                <Link href={`/tag/${tag.slug}`} className="card-hover link-hover" style={{ textDecoration: "none", display: "block", border: "1px solid #ebebeb", padding: 24, borderRadius: 8 }}>
+                  <span style={{ fontSize: 28, display: "block", marginBottom: 10 }}>{tag.emoji}</span>
+                  <h3 style={{ fontSize: 15, fontWeight: "400", color: "#1c1c1c", marginBottom: 6, letterSpacing: "0.08em" }}>{tag.name}</h3>
+                  <p style={{ color: "#999", fontSize: 12, lineHeight: 1.8 }}>{tag.desc}</p>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal>
+            <div style={{ textAlign: "center", marginTop: 32 }}>
+              <Link href="/tag" className="link-hover" style={{ color: "#1c1c1c", fontSize: 11, letterSpacing: "0.2em", textDecoration: "none", borderBottom: "1px solid #1c1c1c", paddingBottom: 4 }}>
+                view more
+              </Link>
+            </div>
+          </ScrollReveal>
+        </section>
+
         {/* ジャーナル */}
         <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 80, paddingBottom: 80 }}>
           <ScrollReveal>

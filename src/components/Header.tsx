@@ -12,7 +12,8 @@ export default function Header() {
             { label: "ranking", href: "/ranking" },
             { label: "journal", href: "/blog" },
             { label: "review", href: "/review" },
-            { label: "genre", href: "/genre" },
+            { label: "tag", href: "/tag" },
+          { label: "genre", href: "/genre" },
           ].map((item) => (
             <Link key={item.href} href={item.href} style={{ color: "#555", textDecoration: "none", fontSize: 12, letterSpacing: "0.12em" }}>
               {item.label}
