@@ -37,15 +37,24 @@ export default function Header() {
           <span style={{ color: "#1c1c1c", fontWeight: "400", fontSize: 15, letterSpacing: "0.15em", fontFamily: "Georgia, serif" }}>私だけの書斎</span>
         </Link>
 
-        {/* 常時表示の検索バー */}
-        <form onSubmit={handleSearch} style={{ flex: 1, maxWidth: 340, display: "flex", gap: 0 }}>
+        {/* ナビ */}
+        <nav style={{ display: "flex", gap: 24, alignItems: "center", flexShrink: 0 }}>
+          {navItems.map((item) => (
+            <Link key={item.href} href={item.href} style={{ color: "#555", textDecoration: "none", fontSize: 11, letterSpacing: "0.12em" }}>
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* 常時表示の検索バー（右端） */}
+        <form onSubmit={handleSearch} style={{ display: "flex", gap: 0, flexShrink: 0 }}>
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="BL・オメガバース・声優名で検索"
+            placeholder="キーワードで検索"
             style={{
-              flex: 1,
+              width: 180,
               padding: "8px 12px",
               border: "1px solid #e0e0e0",
               borderRight: "none",
@@ -59,7 +68,7 @@ export default function Header() {
           <button
             type="submit"
             style={{
-              padding: "8px 14px",
+              padding: "8px 12px",
               background: "#b5838d",
               color: "#fff",
               border: "none",
@@ -67,21 +76,11 @@ export default function Header() {
               fontSize: 11,
               cursor: "pointer",
               letterSpacing: "0.05em",
-              flexShrink: 0,
             }}
           >
             検索
           </button>
         </form>
-
-        {/* ナビ */}
-        <nav style={{ display: "flex", gap: 24, alignItems: "center", flexShrink: 0 }}>
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} style={{ color: "#555", textDecoration: "none", fontSize: 11, letterSpacing: "0.12em" }}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
       </div>
     </header>
   );
