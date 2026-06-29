@@ -142,8 +142,25 @@ export default function Home() {
             {posts.map((post, i) => (
               <ScrollReveal key={post.slug} delay={i * 150}>
                 <Link href={`/blog/${post.slug}`} className="card-hover link-hover" style={{ textDecoration: "none", display: "block" }}>
-                  <div style={{ background: "#f9f6f4", height: 180, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
-                    <span style={{ color: "#ccc", fontSize: 13 }}>image</span>
+                  <div style={{
+                    height: 180,
+                    marginBottom: 16,
+                    background: ["#e8d5d8", "#ddd0e4", "#c8d8d8", "#e0d4c0", "#ccd6e4", "#d8c4b8", "#d4cce0", "#c8d4c0"][i % 8],
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 8,
+                    position: "relative",
+                    overflow: "hidden",
+                  }}>
+                    <div style={{ position: "absolute", inset: 0, background: "rgba(255,255,255,0.15)" }} />
+                    <span style={{ fontSize: 28, opacity: 0.5 }}>
+                      {["📖", "✨", "🐺", "💜", "🎧", "🌸", "🔥", "⛩️"][i % 8]}
+                    </span>
+                    <span style={{ fontSize: 10, color: "#fff", letterSpacing: "0.15em", opacity: 0.9 }}>
+                      {post.category}
+                    </span>
                   </div>
                   <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.1em", marginBottom: 6 }}>{post.category}</p>
                   <h3 style={{ fontSize: 14, fontWeight: "400", color: "#1c1c1c", lineHeight: 1.7, letterSpacing: "0.05em" }}>{post.title}</h3>
