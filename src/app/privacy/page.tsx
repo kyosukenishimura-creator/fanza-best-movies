@@ -51,7 +51,7 @@ export default function PrivacyPage() {
         </div>
       ))}
 
-      <p style={{ color: "#aaa", fontSize: 12, marginTop: 48 }}>制定日：2025年6月1日</p>
+      <p style={{ color: "#aaa", fontSize: 12, marginTop: 48 }}>制定日：2025年6月1日　／　最終更新：2026年6月29日</p>
     </div>
   );
 }
