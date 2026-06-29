@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 const siteUrl = "https://fanza-best-movies.com";
-const FANZA_URL = "https://www.dmm.co.jp/";
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -31,10 +30,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // h3の直後に挿入するインラインCTA
-function InlineCta({ label }: { label: string }) {
+function InlineCta({ label, url }: { label: string; url: string }) {
   return (
     <a
-      href={FANZA_URL}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -61,7 +60,7 @@ function InlineCta({ label }: { label: string }) {
 }
 
 // 記事途中に挿入するバナーCTA
-function MidCta() {
+function MidCta({ url }: { url: string }) {
   return (
     <div style={{ margin: "40px 0", padding: "24px 20px", background: "linear-gradient(135deg, #f9f0f2 0%, #f5f0ee 100%)", borderRadius: 8, border: "1px solid #e8d0d4" }}>
       <p style={{ fontSize: 10, color: "#b5838d", letterSpacing: "0.2em", marginBottom: 8 }}>FANZA</p>
@@ -72,7 +71,7 @@ function MidCta() {
         FANZAはほぼ全作品に無料サンプルあり。登録も無料です。
       </p>
       <a
-        href={FANZA_URL}
+        href={url}
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -141,11 +140,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       return (
         <div key={i}>
-          {showMidCta && <MidCta />}
+          {showMidCta && <MidCta url={post.ctaUrl} />}
           <h3 style={{ fontSize: 16, fontWeight: "500", marginTop: 32, marginBottom: 10, color: "#1c1c1c", letterSpacing: "0.05em" }}>
             {title}
           </h3>
-          {isProduct && <InlineCta label={title.replace(/^[1-9]位：/, "")} />}
+          {isProduct && <InlineCta label={title.replace(/^[1-9]位：/, "")} url={post.ctaUrl} />}
         </div>
       );
     }
@@ -177,7 +176,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* 記事冒頭CTA */}
       <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 16px", background: "#f9f6f4", borderRadius: 6, marginBottom: 32, flexWrap: "wrap" }}>
         <span style={{ fontSize: 12, color: "#888" }}>この記事の作品はFANZAで読めます</span>
-        <a href={FANZA_URL} target="_blank" rel="noopener noreferrer"
+        <a href={post.ctaUrl} target="_blank" rel="noopener noreferrer"
           style={{ fontSize: 11, color: "#b5838d", textDecoration: "none", borderBottom: "1px solid #b5838d", paddingBottom: 1, letterSpacing: "0.1em", flexShrink: 0 }}>
           無料サンプルを読む →
         </a>
@@ -193,7 +192,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <p style={{ fontWeight: "400", marginBottom: 4, color: "#b5838d", fontSize: 11, letterSpacing: "0.15em" }}>FANZA</p>
         <p style={{ fontWeight: "500", marginBottom: 8, color: "#1c1c1c", fontSize: 15 }}>紹介した作品をFANZAで探してみる</p>
         <p style={{ fontSize: 12, color: "#999", marginBottom: 16, lineHeight: 1.8 }}>登録無料・無料サンプルあり・プライバシー完全保護</p>
-        <a href={FANZA_URL} target="_blank" rel="noopener noreferrer"
+        <a href={post.ctaUrl} target="_blank" rel="noopener noreferrer"
           style={{ display: "inline-block", background: "#1c1c1c", color: "#fff", padding: "12px 28px", borderRadius: 4, fontSize: 12, letterSpacing: "0.15em", textDecoration: "none" }}>
           FANZAで作品を探す →
         </a>
@@ -216,7 +215,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       {/* フローティングCTAボタン（固定） */}
       <a
-        href={FANZA_URL}
+        href={post.ctaUrl}
         target="_blank"
         rel="noopener noreferrer"
         style={{
