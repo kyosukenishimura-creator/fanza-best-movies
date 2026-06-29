@@ -50,10 +50,10 @@ export default function Header() {
           {/* 検索ボタン */}
           <button
             onClick={() => setSearchOpen(!searchOpen)}
-            style={{ background: "none", border: "none", cursor: "pointer", color: "#888", fontSize: 14, padding: "4px 6px", display: "flex", alignItems: "center" }}
+            style={{ background: "none", border: "none", cursor: "pointer", color: searchOpen ? "#b5838d" : "#555", fontSize: 11, letterSpacing: "0.12em", padding: 0, fontFamily: "inherit" }}
             aria-label="検索"
           >
-            {searchOpen ? "✕" : "🔍"}
+            {searchOpen ? "close" : "search"}
           </button>
         </nav>
       </div>
