@@ -1,18 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- 背景 -->
-  <rect width="32" height="32" rx="6" fill="#f5f0ee"/>
-  <!-- 本のページ（左） -->
-  <rect x="7" y="8" width="8" height="16" rx="1" fill="#d4b8bb"/>
-  <!-- 本の背表紙（中央） -->
-  <rect x="14.5" y="7" width="2" height="18" rx="0.5" fill="#b5838d"/>
-  <!-- 本のページ（右） -->
-  <rect x="16" y="8" width="8" height="16" rx="1" fill="#c9a0a8"/>
-  <!-- ページの線（左） -->
-  <line x1="9" y1="12" x2="13" y2="12" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
-  <line x1="9" y1="15" x2="13" y2="15" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
-  <line x1="9" y1="18" x2="13" y2="18" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
-  <!-- ページの線（右） -->
-  <line x1="18" y1="12" x2="23" y2="12" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
-  <line x1="18" y1="15" x2="23" y2="15" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
-  <line x1="18" y1="18" x2="23" y2="18" stroke="#f5f0ee" stroke-width="0.8" stroke-linecap="round"/>
+  <rect width="32" height="32" rx="4" fill="#f5f0ee"/>
+  <text
+    x="16"
+    y="23"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="20"
+    fill="#1c1c1c"
+    letter-spacing="0"
+  >書</text>
 </svg>
