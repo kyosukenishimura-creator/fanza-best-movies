@@ -18,11 +18,11 @@ export const novelRanking: RankingWork[] = [
 ];
 
 export const blcdRanking: RankingWork[] = [
-  { rank: 1, title: "メルティホワイトアウト", author: "鯛野ニッケ", imageUrl: "https://img.chil-chil.net/goods_img/L/00140603_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=メルティホワイトアウト/" },
-  { rank: 2, title: "君、シヲレルコト勿レ", author: "Charme Gatto", imageUrl: "https://img.chil-chil.net/goods_img/L/00134588_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=君シヲレルコト/" },
-  { rank: 3, title: "シュガードラッグ 薬学side", author: "頼長", imageUrl: "https://img.chil-chil.net/goods_img/L/00136571_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=シュガードラッグ/" },
-  { rank: 4, title: "セブンティーンシロップス", author: "あらた六花", imageUrl: "https://img.chil-chil.net/goods_img/L/00138086_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=セブンティーンシロップス/" },
-  { rank: 5, title: "ノーカラーベイビー", author: "新書館", imageUrl: "https://img.chil-chil.net/goods_img/L/00098892_L.jpg", linkUrl: "https://www.dmm.co.jp/search/=/searchstr=ノーカラーベイビー/" },
+  { rank: 1, title: "恋をするならひれ伏して", author: "CV: 八代拓 × 大塚剛央", imageUrl: "https://img.chil-chil.net/goods_img/L/00140603_L.jpg", linkUrl: "https://book.dmm.co.jp/search/?searchText=%E6%81%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%AA%E3%82%89%E3%81%B2%E3%82%8C%E4%BC%8F%E3%81%97%E3%81%A6" },
+  { rank: 2, title: "メルティホワイトアウト", author: "CV: 古川慎 × 大塚剛央", imageUrl: "https://img.chil-chil.net/goods_img/L/00134588_L.jpg", linkUrl: "https://book.dmm.co.jp/search/?searchText=%E3%83%A1%E3%83%AB%E3%83%86%E3%82%A3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88" },
+  { rank: 3, title: "6と7", author: "CV: 鈴木崚汰 × 野島健児", imageUrl: "https://img.chil-chil.net/goods_img/L/00136571_L.jpg", linkUrl: "https://book.dmm.co.jp/search/?searchText=6%E3%81%A87+BLCD" },
+  { rank: 4, title: "愛の温度を教えてよ", author: "CV: 佐藤拓也 × 千葉翔也", imageUrl: "https://img.chil-chil.net/goods_img/L/00138086_L.jpg", linkUrl: "https://book.dmm.co.jp/search/?searchText=%E6%84%9B%E3%81%AE%E6%B8%A9%E5%BA%A6%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%82%88" },
+  { rank: 5, title: "コントラディクト", author: "CV: 鈴木崚汰 × 佐藤拓也", imageUrl: "https://img.chil-chil.net/goods_img/L/00098892_L.jpg", linkUrl: "https://book.dmm.co.jp/search/?searchText=%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%83%87%E3%82%A3%E3%82%AF%E3%83%88+BLCD" },
 ];
 
 export const mangaRanking: RankingWork[] = [
