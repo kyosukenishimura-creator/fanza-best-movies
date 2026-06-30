@@ -1,4 +1,4 @@
-import { posts, getPost } from "@/lib/posts";
+import { posts, getPost, type Recommendation } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -186,6 +186,41 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <div style={{ lineHeight: 2.2, fontSize: 15, color: "#444" }}>
         {renderedContent}
       </div>
+
+      {/* おすすめ作品リスト */}
+      {post.recommendations && post.recommendations.length > 0 && (
+        <div style={{ marginTop: 48, marginBottom: 16 }}>
+          <p style={{ color: "#b5838d", fontSize: 10, letterSpacing: "0.2em", marginBottom: 16 }}>この記事でおすすめした作品</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {post.recommendations.map((r: Recommendation, i: number) => (
+              <a
+                key={i}
+                href={r.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  background: "#fdf6f7",
+                  border: "1px solid #e8d0d4",
+                  borderRadius: 6,
+                  padding: "14px 18px",
+                  textDecoration: "none",
+                }}
+              >
+                <div>
+                  <p style={{ fontSize: 13, color: "#1c1c1c", fontWeight: "500", marginBottom: 2 }}>📖 {r.title}</p>
+                  <p style={{ fontSize: 11, color: "#999" }}>{r.author}</p>
+                </div>
+                <span style={{ fontSize: 11, color: "#b5838d", letterSpacing: "0.1em", flexShrink: 0, marginLeft: 12 }}>
+                  FANZAで読む →
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 記事末尾CTA */}
       <div style={{ marginTop: 56, padding: 28, background: "#f9f6f4", border: "1px solid #e8d8d8", borderRadius: 8 }}>
