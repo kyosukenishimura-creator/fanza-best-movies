@@ -19,7 +19,7 @@ export const movies: Movie[] = [
     rating: 4.9,
     reviewCount: 2100,
     description: "年下×年上の甘くてせつない恋愛。田中慶司と十条雀の関係が深まる大人気シリーズ最新刊。",
-    affiliateUrl: "https://book.dmm.co.jp/search/?searchText=40%E3%81%BE%E3%81%A7%E3%81%AB%E3%81%97%E3%81%9F%E3%81%9410%E3%81%AE%E3%81%93%E3%81%A8",
+    affiliateUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D40%E3%81%BE%E3%81%A7%E3%81%AB%E3%81%97%E3%81%9F%E3%81%8410%E3%81%AE%E3%81%93%E3%81%A8&af_id=fanzame-001&ch=toolbar&ch_id=link",
     rank: 1,
   },
   {
@@ -30,7 +30,7 @@ export const movies: Movie[] = [
     rating: 4.8,
     reviewCount: 1560,
     description: "執着攻め×あまあまの最強タッグ。瀬ヶ崎と棚田の関係がついに動く注目の第2巻。",
-    affiliateUrl: "https://book.dmm.co.jp/search/?searchText=%E4%BD%93%E6%84%9F%E4%BA%88%E5%A0%B1",
+    affiliateUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E4%BD%93%E6%84%9F%E4%BA%88%E5%A0%B1&af_id=fanzame-001&ch=toolbar&ch_id=link",
     rank: 2,
   },
   {
@@ -41,7 +41,7 @@ export const movies: Movie[] = [
     rating: 4.7,
     reviewCount: 980,
     description: "恋愛に不器用な受けが少しずつ心を開いていく過程が繊細に描かれた話題作。健気受けが刺さる。",
-    affiliateUrl: "https://book.dmm.co.jp/search/?searchText=%E6%81%8B%E5%BF%83%E9%96%8B%E7%99%BA%E5%AE%9F%E6%B3%81",
+    affiliateUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E6%81%8B%E5%BF%83%E9%96%8B%E7%99%BA%E5%AE%9F%E6%B3%81&af_id=fanzame-001&ch=toolbar&ch_id=link",
     rank: 3,
   },
 ];
