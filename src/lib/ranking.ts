@@ -6,34 +6,175 @@ export type RankingWork = {
   linkUrl: string;
 };
 
-export const novelRanking: RankingWork[] = [
-  { rank: 1, title: "麗しのオメガと卑しいアルファ", author: "羽生橋はせを", imageUrl: "https://img.chil-chil.net/goods_img/L/00140961_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E9%BA%97%E3%81%97%E3%81%AE%E3%82%AA%E3%83%A1%E3%82%AC%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 2, title: "共鳴熱情 オメガバース 上", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00123428_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E5%85%B1%E9%B3%B4%E7%86%B1%E6%83%85%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 3, title: "オメガは運命に誓わない", author: "安西リカ", imageUrl: "https://img.chil-chil.net/goods_img/L/00103055_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%82%AA%E3%83%A1%E3%82%AC%E3%81%AF%E9%81%8B%E5%91%BD%E3%81%AB%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 4, title: "共鳴劣情 オメガバース", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00108345_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E5%85%B1%E9%B3%B4%E5%8A%A3%E6%83%85%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 5, title: "共鳴発情 オメガバース", author: "岩本薫", imageUrl: "https://img.chil-chil.net/goods_img/L/00097508_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E5%85%B1%E9%B3%B4%E7%99%BA%E6%83%85%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 6, title: "オメガバースの不完全性定理", author: "義月粧子", imageUrl: "https://img.chil-chil.net/goods_img/L/00095319_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%82%AA%E3%83%A1%E3%82%AC%E3%83%90%E3%83%BC%E3%82%B9%E3%81%AE%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%80%A7%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 7, title: "イグナートの花嫁", author: "シュークリーム", imageUrl: "https://img.chil-chil.net/goods_img/L/00135964_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%82%A4%E3%82%B0%E3%83%8A%E3%83%BC%E3%83%88%E3%81%AE%E8%8A%B1%E5%AB%81%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 8, title: "小説 オメガバースアンソロジー", author: "リブレ", imageUrl: "https://img.chil-chil.net/goods_img/L/00090050_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%82%AA%E3%83%A1%E3%82%AC%E3%83%90%E3%83%BC%E3%82%B9%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-];
-
-export const blcdRanking: RankingWork[] = [
-  { rank: 1, title: "恋をするならひれ伏して", author: "CV: 八代拓 × 大塚剛央", imageUrl: "https://img.chil-chil.net/goods_img/L/00140603_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E6%81%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%AA%E3%82%89%E3%81%B2%E3%82%8C%E4%BC%8F%E3%81%97%E3%81%A6&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 2, title: "メルティホワイトアウト", author: "CV: 古川慎 × 大塚剛央", imageUrl: "https://img.chil-chil.net/goods_img/L/00134588_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E3%83%A1%E3%83%AB%E3%83%86%E3%82%A3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 3, title: "6と7", author: "CV: 鈴木崚汰 × 野島健児", imageUrl: "https://img.chil-chil.net/goods_img/L/00136571_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D6%E3%81%A87%20BLCD&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 4, title: "愛の温度を教えてよ", author: "CV: 佐藤拓也 × 千葉翔也", imageUrl: "https://img.chil-chil.net/goods_img/L/00138086_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E6%84%9B%E3%81%AE%E6%B8%A9%E5%BA%A6%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%82%88&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 5, title: "コントラディクト", author: "CV: 鈴木崚汰 × 佐藤拓也", imageUrl: "https://img.chil-chil.net/goods_img/L/00098892_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fsearch%2F%3FsearchText%3D%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%83%87%E3%82%A3%E3%82%AF%E3%83%88%20BLCD&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-];
-
+// 商業BL漫画（FANZAブックス BLフロア 実データ）
 export const mangaRanking: RankingWork[] = [
-  { rank: 1, title: "雨が止んだら、晴れ時々…恋", author: "サクタ", imageUrl: "https://img.chil-chil.net/goods_img/L/00162925_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E9%9B%A8%E3%81%8C%E6%AD%A2%E3%82%93%E3%81%A0%E3%82%89%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 2, title: "茂木くんはどうしてもしてみたい", author: "淵", imageUrl: "https://img.chil-chil.net/goods_img/L/00162924_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E8%8C%82%E6%9C%A8%E3%81%8F%E3%82%93%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 3, title: "異種婚×溺愛子作り", author: "若成きすけ", imageUrl: "https://img.chil-chil.net/goods_img/L/00162923_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E7%95%B0%E7%A8%AE%E5%A9%9A%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 4, title: "完璧なモブを目指したら暴君の強制刻印", author: "naked ape", imageUrl: "https://img.chil-chil.net/goods_img/L/00162922_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E5%AE%8C%E7%92%A7%E3%81%AA%E3%83%A2%E3%83%96%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 5, title: "僕らの恋はLDKで", author: "山葵マグロ", imageUrl: "https://img.chil-chil.net/goods_img/L/00162921_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E5%83%95%E3%82%89%E3%81%AE%E6%81%8B%E3%81%AFLDK%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 6, title: "ブラットテイマー/ジョーカー", author: "キタハラリイ", imageUrl: "https://img.chil-chil.net/goods_img/L/00162920_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%83%96%E3%83%A9%E3%83%83%E3%83%88%E3%83%86%E3%82%A4%E3%83%9E%E3%83%BC%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 7, title: "バードフル", author: "だんどり", imageUrl: "https://img.chil-chil.net/goods_img/L/00162919_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%83%90%E3%83%BC%E3%83%89%E3%83%95%E3%83%AB%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 8, title: "オニかわいい鬼川くん", author: "鰹", imageUrl: "https://img.chil-chil.net/goods_img/L/00162918_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E9%AC%BC%E5%B7%9D%E3%81%8F%E3%82%93%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 9, title: "まるっと中までだ〜い好き！ 下", author: "さお田ぽち太郎", imageUrl: "https://img.chil-chil.net/goods_img/L/00162917_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%81%BE%E3%82%8B%E3%81%A3%E3%81%A8%E4%B8%AD%E3%81%BE%E3%81%A7%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
-  { rank: 10, title: "つかいすての兵器たち", author: "ごごの", imageUrl: "https://img.chil-chil.net/goods_img/L/00162915_L.jpg", linkUrl: "https://al.dmm.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Fsearch%2F%3D%2Fsearchstr%3D%E3%81%A4%E3%81%8B%E3%81%84%E3%81%99%E3%81%A6%E3%81%AE%E5%85%B5%E5%99%A8%2F&af_id=fanzame-001&ch=toolbar&ch_id=link" },
+  {
+    rank: 1,
+    title: "オトコごころと春の空【合本版】【R-18版】",
+    author: "土狼弐",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/s539ahuat00095/s539ahuat00095pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4375872%2Fs539ahuat00095%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 2,
+    title: "brainHacker",
+    author: "大介",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b073bktcm04423/b073bktcm04423pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4186481%2Fb073bktcm04423%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 3,
+    title: "オタクに優しい陽キャがエロ配信者だったんだが【18禁版】",
+    author: "ねこげ",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b428ajlan07221/b428ajlan07221pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6263186%2Fb428ajlan07221%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 4,
+    title: "Hate My MIA！【コミックス版】《R18版》",
+    author: "人鳥ぺんぎん",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b343afspr05407/b343afspr05407pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6259169%2Fb343afspr05407%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 5,
+    title: "俺はお前の牛じゃない！",
+    author: "みーち",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/k687aeiwa00293/k687aeiwa00293pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4036005%2Fk687aeiwa00293%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 6,
+    title: "おれの初夜は何度あってもいい【R18コミックス版】",
+    author: "今井ささる",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b260ajune03306/b260ajune03306pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6069774%2Fb260ajune03306%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 7,
+    title: "甘えたい獣【コミックス版】【18禁版】",
+    author: "ゆいつ",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b294abrit04293/b294abrit04293pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6274793%2Fb294abrit04293%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 8,
+    title: "鮫は桜に恋をする【コミックス版】【18禁版】",
+    author: "涼",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b294abrit04292/b294abrit04292pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6126195%2Fb294abrit04292%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 9,
+    title: "恋してトロけて匂わせて《R18版》",
+    author: "彩月ユリィ",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b343afspr05618/b343afspr05618pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F6278790%2Fb343afspr05618%2F&af_id=fanzame-001&ch=api",
+  },
+  {
+    rank: 10,
+    title: "運命すらも呼吸をとめて",
+    author: "滝端",
+    imageUrl: "https://ebook-assets.dmm.co.jp/digital/e-book/b163cijt227006/b163cijt227006pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Fbook.dmm.co.jp%2Fproduct%2F4195945%2Fb163cijt227006%2F&af_id=fanzame-001&ch=api",
+  },
+];
+
+// 同人BL小説・テキスト系（らぶカル BLフロア 実データ）
+export const novelRanking: RankingWork[] = [
+  {
+    rank: 1,
+    title: "タチとネコどっちがイイの？〜汁だくエッチなみつどもえ〜",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_190373/d_190373pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_190373%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 2,
+    title: "タチとネコどっちがイイの？3〜外でもナカよくみつどもえ〜",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_253551/d_253551pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_253551%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 3,
+    title: "タチとネコどっちがイイの？2〜白だくエッチなみつどもえ〜",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_216356/d_216356pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_216356%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 4,
+    title: "貸出禁止の図書委員〜無垢な快楽堕ち編〜",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_687181/d_687181pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_687181%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 5,
+    title: "噂の温泉旅館 若旦那の肉体接待【DL特典付き】",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_472243/d_472243pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_472243%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 6,
+    title: "乳首小説家の円さん、お隣さんと濃厚週末×××",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_753909/d_753909pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_753909%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 7,
+    title: "メス堕ち4 メスの喜び",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/comic/d_308360/d_308360pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_308360%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 8,
+    title: "大穢-完全版-",
+    author: "",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/game/d_426055/d_426055pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_426055%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+];
+
+// 同人BLボイスドラマ（らぶカル BLフロア ボイス系 実データ）
+export const blcdRanking: RankingWork[] = [
+  {
+    rank: 1,
+    title: "関西弁の美人彼氏をメス堕ちするまで抱いた夜",
+    author: "CV: 不明",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/voice/d_238915/d_238915pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_238915%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 2,
+    title: "アンタの役に勃ちたくて！〜家性夫竜星のオシゴト〜",
+    author: "CV: 不明",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/voice/d_311046/d_311046pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_311046%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 3,
+    title: "関西弁の美人彼氏をメス堕ちするまで『一晩中』抱いた夜",
+    author: "CV: 不明",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/voice/d_339189/d_339189pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_339189%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 4,
+    title: "傲慢王族騎士の地球転生！？〜平凡リーマンの鬼畜わからせセックス〜",
+    author: "CV: 不明",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/voice/d_234628/d_234628pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_234628%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
+  {
+    rank: 5,
+    title: "実験！！男友達とSEXできますか？",
+    author: "CV: 不明",
+    imageUrl: "https://doujin-assets.dmm.co.jp/digital/voice/d_238861/d_238861pl.jpg",
+    linkUrl: "https://al.fanza.co.jp/?lurl=https%3A%2F%2Flovecul.dmm.co.jp%2Fbl%2F-%2Fdetail%2F%3D%2Fcid%3Dd_238861%2F&af_id=fanzame-001&ch=search_link&ch_id=package",
+  },
 ];

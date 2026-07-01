@@ -125,13 +125,13 @@ export default function Home() {
             </div>
           </ScrollReveal>
           <ScrollReveal>
-            <HorizontalRanking title="漫画（コミック）" works={mangaRanking} />
+            <HorizontalRanking title="商業BL漫画" works={mangaRanking} />
           </ScrollReveal>
           <ScrollReveal>
-            <HorizontalRanking title="小説" works={novelRanking} />
+            <HorizontalRanking title="同人BL小説" works={novelRanking} />
           </ScrollReveal>
           <ScrollReveal>
-            <HorizontalRanking title="BLCD" works={blcdRanking} />
+            <HorizontalRanking title="BLボイスドラマ" works={blcdRanking} />
           </ScrollReveal>
         </section>
 
