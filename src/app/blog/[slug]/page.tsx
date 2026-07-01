@@ -1,4 +1,5 @@
 import { posts, getPost, type Recommendation } from "@/lib/posts";
+import BannerAd from "@/components/BannerAd";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -187,6 +188,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {renderedContent}
       </div>
 
+      {/* 広告バナー */}
+      {/* バナー① 記事本文後 */}
+      <BannerAd bannerId="1732_300_250" />
+
       {/* おすすめ作品リスト */}
       {post.recommendations && post.recommendations.length > 0 && (
         <div style={{ marginTop: 48, marginBottom: 16 }}>
@@ -232,6 +237,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           FANZAで作品を探す →
         </a>
       </div>
+
+      {/* バナー② 末尾CTA後 */}
+      <BannerAd bannerId="1742_300_250" />
+
+      {/* バナー③ */}
+      <BannerAd bannerId="1665_300_250" />
 
       {/* 関連記事 */}
       {related.length > 0 && (

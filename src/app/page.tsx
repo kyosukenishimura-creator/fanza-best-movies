@@ -2,6 +2,7 @@ import Link from "next/link";
 import MovieCard from "@/components/MovieCard";
 import ScrollReveal from "@/components/ScrollReveal";
 import HorizontalRanking from "@/components/HorizontalRanking";
+import BannerAd from "@/components/BannerAd";
 import { movies } from "@/lib/movies";
 import { posts } from "@/lib/posts";
 import { mangaRanking, novelRanking, blcdRanking } from "@/lib/ranking";
@@ -130,6 +131,10 @@ export default function Home() {
           </ScrollReveal>
         </section>
 
+        {/* 広告バナー */}
+        {/* バナー① ランキング後 */}
+        <BannerAd bannerId="1732_300_250" />
+
         {/* ジャーナル */}
         <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 80, paddingBottom: 80 }}>
           <ScrollReveal>
@@ -179,6 +184,12 @@ export default function Home() {
             </div>
           </ScrollReveal>
         </section>
+
+        {/* バナー② ジャーナル後 */}
+        <BannerAd bannerId="1742_300_250" />
+
+        {/* バナー③ ページ末尾 */}
+        <BannerAd bannerId="1665_300_250" />
 
       </div>
     </div>
