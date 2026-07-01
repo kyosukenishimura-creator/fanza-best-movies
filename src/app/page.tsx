@@ -3,6 +3,7 @@ import MovieCard from "@/components/MovieCard";
 import ScrollReveal from "@/components/ScrollReveal";
 import HorizontalRanking from "@/components/HorizontalRanking";
 import BannerAd from "@/components/BannerAd";
+import FeaturedBooks from "@/components/FeaturedBooks";
 import { movies } from "@/lib/movies";
 import { posts } from "@/lib/posts";
 import { mangaRanking, novelRanking, blcdRanking } from "@/lib/ranking";
@@ -130,6 +131,9 @@ export default function Home() {
             <HorizontalRanking title="BLCD" works={blcdRanking} />
           </ScrollReveal>
         </section>
+
+        {/* 管理人おすすめ作品（書影グリッド） */}
+        <FeaturedBooks />
 
         {/* 広告バナー */}
         <BannerAd />
