@@ -132,8 +132,7 @@ export default function Home() {
         </section>
 
         {/* 広告バナー */}
-        {/* バナー① ランキング後 */}
-        <BannerAd bannerId="1732_300_250" />
+        <BannerAd />
 
         {/* ジャーナル */}
         <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 80, paddingBottom: 80 }}>
@@ -185,11 +184,6 @@ export default function Home() {
           </ScrollReveal>
         </section>
 
-        {/* バナー② ジャーナル後 */}
-        <BannerAd bannerId="1742_300_250" />
-
-        {/* バナー③ ページ末尾 */}
-        <BannerAd bannerId="1665_300_250" />
 
       </div>
     </div>
