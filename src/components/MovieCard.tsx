@@ -7,11 +7,16 @@ export default function MovieCard({ movie }: { movie: Movie }) {
     <div className="card-hover" style={{ background: "#fff" }}>
       <div style={{ background: "#f5f0ee", height: 220, display: "flex", alignItems: "center", justifyContent: "center", position: "relative", marginBottom: 16, overflow: "hidden" }}>
         {movie.rank && (
-          <div style={{ position: "absolute", top: 12, left: 12, color: "#b5838d", fontFamily: "Georgia, serif", fontSize: 12, letterSpacing: "0.1em" }}>
+          <div style={{ position: "absolute", top: 12, left: 12, color: "#b5838d", fontFamily: "Georgia, serif", fontSize: 12, letterSpacing: "0.1em", zIndex: 1 }}>
             0{movie.rank}
           </div>
         )}
-        <span style={{ color: "#ccc", fontSize: 13 }}>image</span>
+        {movie.imageUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={movie.imageUrl} alt={movie.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+        ) : (
+          <span style={{ color: "#ccc", fontSize: 13 }}>image</span>
+        )}
       </div>
       <div style={{ display: "flex", gap: 6, marginBottom: 8, flexWrap: "wrap" }}>
         {movie.genre.map((g, i) => (
