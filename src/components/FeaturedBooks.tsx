@@ -13,31 +13,43 @@ const books = [
 
 export default function FeaturedBooks() {
   return (
-    <section style={{ borderTop: "1px solid #ebebeb", paddingTop: 64, paddingBottom: 64 }}>
-      <div style={{ textAlign: "center", marginBottom: 40 }}>
-        <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 8 }}>PICKUP</p>
-        <h2 style={{ fontSize: 20, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>管理人おすすめ作品</h2>
-        <p style={{ color: "#999", fontSize: 12, marginTop: 8, letterSpacing: "0.05em" }}>腐女子歴15年のみつきが実際に読んで良かった作品</p>
+    <section style={{ padding: "48px 0 40px" }}>
+      <style>{`
+        .featured-books-grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 10px;
+        }
+        @media (max-width: 600px) {
+          .featured-books-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+          }
+        }
+        .featured-books-item {
+          display: block;
+          border-radius: 4px;
+          overflow: hidden;
+          transition: opacity 0.2s, transform 0.2s;
+        }
+        .featured-books-item:hover {
+          opacity: 0.8;
+          transform: translateY(-2px);
+        }
+      `}</style>
+      <div style={{ textAlign: "center", marginBottom: 28 }}>
+        <p style={{ color: "#b5838d", fontSize: 11, letterSpacing: "0.2em", marginBottom: 6 }}>PICKUP</p>
+        <h2 style={{ fontSize: 18, fontWeight: "400", color: "#1c1c1c", letterSpacing: "0.1em" }}>管理人おすすめ作品</h2>
+        <p style={{ color: "#999", fontSize: 12, marginTop: 6 }}>腐女子歴15年のみつきが実際に読んで良かった作品</p>
       </div>
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(5, 1fr)",
-        gap: 12,
-      }}>
+      <div className="featured-books-grid">
         {books.map((book, i) => (
           <a
             key={i}
             href={book.href}
             rel="sponsored"
             target="_blank"
-            style={{
-              display: "block",
-              borderRadius: 4,
-              overflow: "hidden",
-              transition: "opacity 0.2s, transform 0.2s",
-            }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = "0.8"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = "1"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            className="featured-books-item"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -48,7 +60,7 @@ export default function FeaturedBooks() {
           </a>
         ))}
       </div>
-      <p style={{ textAlign: "center", color: "#bbb", fontSize: 10, marginTop: 16, letterSpacing: "0.05em" }}>
+      <p style={{ textAlign: "center", color: "#ccc", fontSize: 10, marginTop: 12 }}>
         ※ アフィリエイトリンクを含みます
       </p>
     </section>

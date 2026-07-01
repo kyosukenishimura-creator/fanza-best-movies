@@ -38,6 +38,9 @@ export default function Home() {
           ※ 本サイトは18歳以上の方を対象としています
         </p>
 
+        {/* 管理人おすすめ作品（書影グリッド） */}
+        <FeaturedBooks />
+
         {/* ジャンル */}
         <ScrollReveal>
           <section style={{ padding: "64px 0 48px" }}>
@@ -131,9 +134,6 @@ export default function Home() {
             <HorizontalRanking title="BLCD" works={blcdRanking} />
           </ScrollReveal>
         </section>
-
-        {/* 管理人おすすめ作品（書影グリッド） */}
-        <FeaturedBooks />
 
         {/* 広告バナー */}
         <BannerAd />
